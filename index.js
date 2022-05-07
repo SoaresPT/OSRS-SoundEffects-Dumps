@@ -68,7 +68,8 @@ window.addEventListener('DOMContentLoaded', function () {
       var repo = index.getRepoInfo();
       if (!repo) return window.alert('Repo config missing!');
 
-      var uri = 'https://api.github.com/repos/' + repo.owner + '/' + repo.name + ('/git/trees/' + repo.branch + '?recursive=1');
+      //var uri = 'https://api.github.com/repos/' + repo.owner + '/' + repo.name + ('/git/trees/' + repo.branch + '?recursive=1');
+      var uri = 'https://api.github.com/repos/' + repo.owner + '/' + repo.name + ('/git/trees/' + '20ac6d11bbd1d8aa6a7e2cde393d7c6cf6f5d7c1'); // hardcoded sha eww
       window.fetch(uri, { cache: 'force-cache' }).then(function (resp) {
         return resp.json();
       }).then(function (result) {
