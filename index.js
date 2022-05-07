@@ -153,7 +153,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
       // generate list html
       var repo = index.getRepoInfo();
-      var home = 'http://' + repo.owner + '.github.io/' + repo.name + '/';
+      var home = 'http://' + repo.owner + '.github.io/' + repo.name + '/sounds/';
       var items = Object.keys(tree).map(function (key) {
         if (key === '/NODE/') return '';
 
