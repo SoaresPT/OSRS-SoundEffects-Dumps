@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
       insertStylesheet('https://SoaresPT.github.io/OSRS-SoundEffects-Dumps/index.css');
       // insertStylesheet('index.css')
-      insertStylesheetAsync('https://octicons.github.com/components/octicons/octicons/octicons.css');
+      insertStylesheetAsync('https://unpkg.com/@primer/octicons@17.1.0/build/build.css');
       window.fetch || insertScript('https://cdn.jsdelivr.net/fetch/0.9.0/fetch.min.js');
 
       index.loadTrees();
